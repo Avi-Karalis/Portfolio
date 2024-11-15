@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar-container">
+<nav class="navbar-container">
     <div class="navbar-inner">
       <div class="navbar-content">
         <!-- Logo/Name -->
@@ -105,11 +105,11 @@ onUnmounted(() => {
 }
 
 .navbar-brand {
-  @apply text-aizome hover:text-aizome-light transition-colors duration-300 text-xl font-medium;
+  @apply text-aizome-500 hover:text-aizome-400 transition-colors duration-300 text-xl font-medium;
 }
 
 .nav-link {
-  @apply relative text-gray-700 dark:text-gray-300 hover:text-aizome dark:hover:text-aizome-light px-3 py-2 text-sm font-medium transition-colors duration-300;
+  @apply relative text-gray-700 dark:text-gray-300 hover:text-aizome-500 dark:hover:text-aizome-300 px-3 py-2 text-sm font-medium transition-colors duration-300;
 }
 
 .nav-link::after {
@@ -122,8 +122,12 @@ onUnmounted(() => {
   @apply w-full;
 }
 
+.nav-link-active {
+  @apply text-aizome-500 dark:text-aizome-300;
+}
+
 .mobile-menu-button {
-  @apply inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-aizome hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-300;
+  @apply inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-aizome-500 dark:hover:text-aizome-300 focus:outline-none;
 }
 
 .menu-icon {
@@ -139,10 +143,10 @@ onUnmounted(() => {
 }
 
 .mobile-nav-link {
-  @apply block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-aizome hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-300;
+  @apply block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-aizome-500 dark:hover:text-aizome-300 transition-colors duration-300;
 }
 
 .mobile-nav-link-active {
-  @apply text-aizome bg-gray-100 dark:bg-gray-800;
+  @apply text-aizome-500 dark:text-aizome-300;
 }
 </style>

@@ -2,11 +2,11 @@
   <div class="min-h-screen bg-white dark:bg-gray-900">
     <NavBar />
     <main>
-      <!-- <HeroSection />
+      <HeroSection />
       <AboutSection />
       <GallerySection />
-      <ContactSection /> -->
+      <ContactSection />
     </main>
-    <!-- <Footer /> -->
+    <Footer />
   </div>
 </template>

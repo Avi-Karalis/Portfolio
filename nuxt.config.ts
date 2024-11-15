@@ -21,5 +21,8 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap' }
       ]
     }
-  }
+  },
+  colorMode: {
+    classSuffix: '',
+  },
 })
